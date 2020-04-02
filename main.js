@@ -9,4 +9,4 @@ http.createServer((request, response) => {
     response.write(q.fname + " " + q.lname+"\n");
     response.end("Hello world.\n");
 }).listen(8081);
-    console.log("Server running at http://127.0.0.1:8081")
+    console.log("Server running on http://127.0.0.1:8081")
