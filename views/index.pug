@@ -1,0 +1,39 @@
+html
+head
+title= title
+//- -var authenticated = true
+-var classes = ["class_1","class_2","class_3"]
+-var author = "Arm Banna 55"
+-var user = {description: "A B C"}
+-var authorised = false
+-var n=0
+body
+h1= message
+p
+    | Hello My name is Thanachot Tesjaroen <br>
+    | Hello My name is Patchara Mangkorn
+<br>  
+a(href="้google.com" target="_blank") Google <br>
+h1(style={color:'red',background:'green'}) Sawasde <br>
+h1(class=classes  class=['class_4']) <br>
+a.btn(href="#") test link class <br>
+a#link1(href="#") test link id <br>
+
+-for(var x=0;x<3;x++)
+    li item
+p -----------------------------
+-var list = ["Uno","Dos","Tres","Cuatro","Cinco","Seis"]
+each item in list
+    li=item
+<br>
+p this page write by <h1> #{author} </h1>
+
+if user.description
+    h2(style={color:'green'}) #{author}
+else if authorised
+    h2(style={color:'red'}) #{author}
+while n<4
+    li= n++
+
+footer#footer
+    include footer.pug
