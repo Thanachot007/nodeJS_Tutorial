@@ -24,5 +24,5 @@ app.get("/users/:userId/:userName", (req,res) => {
 app.get("/user_information", [name, lname, address]);
 
 app.listen(3000, () => {
-    console.log("Server start at 127.0.0.1:3000");
+    console.log("Server start on 127.0.0.1:3000");
 });
