@@ -1,10 +1,10 @@
 var fs = require("fs"); //require module ชื่อ fs
-// fs.appendFile('myfile1.txt', 'Create or update by fs.appendfile', function (err) { 
-//     if (err) throw err;
-//     console.log('saved');
-// }) //สร้างไฟล์ชื่อ myfile1.txt พร้อมเขียนข้อความ Create or update by fs.appendfile และมี callback function มี parameter ชื่อ err 
-// //ถ้าเกิด error ให้ โยนไปที่ runtime
-// //ถ้ามีไฟล์ชื่อนั้นอยู่แล้วมันจะทำการต่อท้ายไฟล์นั้นด้วย text ที่กำหนด
+fs.appendFile('myfile1.txt', 'Create or update by fs.appendfile', function (err) { 
+    if (err) throw err;
+    console.log('saved');
+}) //สร้างไฟล์ชื่อ myfile1.txt พร้อมเขียนข้อความ Create or update by fs.appendfile และมี callback function มี parameter ชื่อ err 
+//ถ้าเกิด error ให้ โยนไปที่ runtime
+//ถ้ามีไฟล์ชื่อนั้นอยู่แล้วมันจะทำการต่อท้ายไฟล์นั้นด้วย text ที่กำหนด
 
 // fs.writeFile('myfile1.txt', 'Create or update by fs.appendfile', function (err) { 
 //     if (err) throw err;
